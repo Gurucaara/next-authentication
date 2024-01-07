@@ -10,7 +10,7 @@ export const reset = async (values: z.infer<typeof ResetSchema>) => {
   const validateFields = ResetSchema.safeParse(values);
 
   if (!validateFields.success) {
-    return { error: "Invalid email" };
+    return { error: "Invalid email!" };
   }
 
   const { email } = validateFields.data;
