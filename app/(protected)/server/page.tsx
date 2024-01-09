@@ -4,7 +4,8 @@ import { currentUser } from "@/lib/auth";
 const ServerPage = async () => {
   const user = await currentUser();
 
-  return <UserInfo label="💻Server Components" user={user} />;
+  return <UserInfo label="💻Server Components" user={user} />
+  
 };
 
 export default ServerPage;
