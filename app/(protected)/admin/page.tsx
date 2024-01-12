@@ -6,10 +6,9 @@ import { FormSuccess } from "@/components/form-success";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { UserRole } from "@prisma/client";
-import { on } from "events";
 import { toast } from "sonner";
 
-export const AdminPage = () => {
+const AdminPage = () => {
   const onServerActionClick = () => {
     admin().then((data) => {
       if (data.error) {
